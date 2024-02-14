@@ -1,15 +1,10 @@
-import { useEffect, useState } from 'react';
-import axios from 'axios';
-import './App.css'
+import React, { useState, useEffect } from "react";
+import './App.css';
 
-function App() {
-  const [todo, setTodo] = useState("");
-  const [todList, setTodoList] = useState([]); 
+const App = () => {
 
-  useEffect(() => {
-    axios.get()
-  })
-
+  const [task, setTask] = useState('');
+  const [todoList, setTodoList] = useState([]);
 
   return (
     <>
@@ -21,4 +16,3 @@ function App() {
   )
 }
 
-export default App
